@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            height: 500px;
+            width: 95%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+        }
+        #container>div:first-child{
+            background-color: #f7ff00;
+            height: 100px;
+            font-size: 46px;
+            font-family: 'Outfit', sans-serif;
+            color: black;
+        }
+        p{
+            margin: 12px 0px 10px 15px;
+        }
+        #container>div:nth-child(2){
+            height: 300px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+            background-color: white;
+            font-size: 30px;
+        }
+        div>div:first-child{
+            background-color: red;
+            color: #ae2c2e;
+        }
+        div>div:nth-child(2){
+            background-color: blue;
+            color: #000041;
+        }
+        div>div:nth-child(3){
+            background-color: green;
+            color: #000900;
+        }
+        div>div:nth-child(4){
+            background-color: #989898;
+            color: #6c5335;
+        }
+       @media all and (min-width: 420px) and (max-width: 790px){
+            #container>div:nth-child(2) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 400px);
+                gap: 30px;
+            }
+       }
+       @media all and (min-width: 50px) and (max-width: 419px){
+            #container>div:nth-child(2) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 400px);
+                gap: 30px;
+            }
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><p>Navigation</p></div>
+        <div>
+            <div><p>Box 1</p></div>
+            <div><p>Box 2</p></div>
+            <div><p>Box 3</p></div>
+            <div><p>Box 4</p></div>
+        </div>  
+    </div>
+</body>
+</html>
