@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Hotel</title>
+    <script src="https://kit.fontawesome.com/8bdc5a9f79.js" crossorigin="anonymous"></script>
+    <style>
+        
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-family:  'Calibri';
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        #container>div, #container2>div {
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        img+div{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+        p{
+            font-family:  'Calibri';
+            font-size: 22px;
+            margin-top: -1px;
+        }
+        button{
+            color: white;
+            font-family: 'helvetica';
+            background-color: #c78f4a;
+            font-size: 14px;
+            border: 0px;
+            border-radius: 10px;
+            height: max-content; 
+            padding: 10px 15px;  
+            margin-top: px;
+        }
+        #container2{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            
+        }
+        .class1 {
+            text-align: center;
+            padding-top: 10px;
+        }
+        span{
+            color: #f1bb7a;
+        }
+        .pclass{
+            font-family:  'Calibri';
+            font-size: 16px;
+            color: #585656;
+        }
+    </style>
+</head>
+<body>
+    <h1>popular distinations</h1>
+    <div id="container">
+        <div>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Mumbai/images/16x7/AAG_27642205-H1-015Pooside-16x7.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+            <div>
+                <p>Mumbai</p>
+                <button>View Details</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Holiday_Village_Goa/images/16x7/Taj%20Goa%2016X9.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+            <div>
+                <p>Goa</p>
+                <button>View Details</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Delhi/images/new-images/taj-mahal-new-delhi-yesterday-today-forever.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+            <div>
+                <p>New Delhi</p>
+                <button>View Details</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/jai-mahal-palace,jaipur/images/new-images/Taj%20Jai%20Mahal%20Palace.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+            <div>
+                <p>Jaipur</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </div>
+    <h1>happinings</h1>
+    <div id="container2">
+        <div>
+            <p class="class1"><span><i class="fa-sharp fa-regular fa-clock"></i></i></span> Open now</p>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-wayanad/images/gallery/hotel-overview-1.jpg/jcr:content/renditions/cq5dam.web.512.512.jpeg" alt="">
+            <div>
+                <h3>Taj Wayanad Resort & Spa <br> <p class="pclass">Kerala</p></h3>
+                <button>View Details</button>
+            </div>
+        </div>
+        <div>
+            <p class="class1"><span><i class="fa-sharp fa-regular fa-clock"></i></i></span> Open now</p>
+            <img src="https://www.tajhotels.com/content/dam/seleqtions/en/in/our-hotels/the-yellow-house/16x7/facade.jpg/jcr:content/renditions/cq5dam.web.512.512.jpeg" alt="">
+            <div>
+                <h3>The Yellow House, Anjuna - <br> IHCL SeleQtions <br> <p class="pclass">Goa</p></h3>
+                <button>View Details</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
