@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="gender" id="gender">
+      <option value="">--</option>
+      <option value="male">M</option>
+      <option value="female">F</option>
+    </select>
+    <input id="year" type="number" placeholder="Year of birth" value="" />
+    <button onclick="checkAge()">Check age for marraiage</button>
+    
+    <script>
+      function checkAge() {
+        var gender = document.getElementById("gender").value;
+        var yearOfBirth = document.getElementById("year").value;
+        var curr_year = new Date().getFullYear();
+        
+        if (gender == "female") {
+          if(curr_year-yearOfBirth>=18){
+            alert("Legal age to get Married for girl")
+          } else{
+            alert("You can't get married")
+          }
+        }
+        if(gender == "male"){
+            if(curr_year-yearOfBirth>=21){
+                alert("Legal age to get married for men")
+            }else{
+                alert("You can't get married")
+            }
+        }
+        
+      }
+    </script>
+  </body>
+</html>
