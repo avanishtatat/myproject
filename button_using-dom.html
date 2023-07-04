@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var btnArr = [
+    { name: "Primary", color: "white", bgColor: "blue" },
+    { name: "Secondary", color: "white", bgColor: "grey" },
+    { name: "Danger", color: "white", bgColor: "red" },
+    { name: "Warning", color: "black", bgColor: "yellow" },
+    { name: "Info", color: "white", bgColor: "cyan" },
+    { name: "Light", color: "black", bgColor: "white" },
+    { name: "Success", color: "white", bgColor: "green" },
+    { name: "Dark", color: "white", bgColor: "black" },
+    { name: "Link", color: "blue", bgColor: "white" },
+    { name: "Dark Pink", color: "blue", bgColor: "pink" },
+  ];
+
+  btnArr.map(function(ele){
+    var div1 = document.createElement("div");
+   
+    div1.innerText = ele.name;
+    div1.style.color = ele.color;
+    div1.style.backgroundColor  = ele.bgColor;
+   document.querySelector('body').append(div1)
+  })
+  
+
+
+  
+  
+</script>
